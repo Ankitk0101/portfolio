@@ -33,7 +33,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Smart Home",
-      description: " ",
+      description: "Smart Home full-stack smart home system Interactive React interface connected to Firebase for real-time smart device control and status monitoring",
       image: assets.Room,
       technologies: ["React", "FireBase"],
       liveUrl: "https://smart-home-ankit-kumar.netlify.app/",
