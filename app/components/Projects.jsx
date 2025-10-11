@@ -37,7 +37,7 @@ const Projects = () => {
       image: assets.Room,
       technologies: ["React", "FireBase"],
       liveUrl: "https://smart-home-ankit-kumar.netlify.app/",
-      githubUrl: "https://github.com/masai-course/ankit_kumar_fs42_471001/tree/master/unit-4/BuildWeek/smartHome",
+      githubUrl: "https://github.com/Ankitk0101/Smart-Home-Devices-Controller",
       featured: false,
       category: "Frontend"
     },
