@@ -90,8 +90,8 @@ function Navbar() {
           </span>
         </motion.div>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 font-medium text-gray-700 drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
+        {/* Desktop Menu - Hidden at 790px and below */}
+        <ul className="hidden min-[791px]:flex items-center gap-6 lg:gap-8 font-medium text-gray-700 drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
           {["home", "about", "skills", "projects", "contact"].map((section) => (
             <li
               key={section}
@@ -115,8 +115,8 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* Right Buttons */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* Right Buttons - Hidden at 790px and below */}
+        <div className="hidden min-[791px]:flex items-center gap-3">
           {/* Resume button with download icon */}
           <motion.button
             onClick={handleResumeOpen}
@@ -164,10 +164,10 @@ function Navbar() {
           </motion.button>
         </div>
 
-        {/* Hamburger Menu (Mobile) */}
+        {/* Hamburger Menu - Show at 790px and below */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden flex flex-col gap-[5px] justify-center items-center"
+          className="min-[791px]:hidden flex flex-col gap-[5px] justify-center items-center"
         >
           <span
             className={`h-[2px] w-6 bg-gray-800 rounded transition-all duration-300 ${
@@ -187,14 +187,14 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Show at 790px and below */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden absolute top-[100%] left-0 w-full bg-white/95 shadow-[0_4px_20px_rgba(255,255,255,0.4)] backdrop-blur-md rounded-b-2xl z-[9998]"
+            className="min-[791px]:hidden absolute top-[100%] left-0 w-full bg-white/95 shadow-[0_4px_20px_rgba(255,255,255,0.4)] backdrop-blur-md rounded-b-2xl z-[9998]"
           >
             <ul className="flex flex-col items-center py-4 gap-3 text-gray-700 font-medium">
               {["home", "about", "skills", "projects", "contact"].map(
