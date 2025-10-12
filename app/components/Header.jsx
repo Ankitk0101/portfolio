@@ -114,11 +114,11 @@ function Header() {
   return (
     <section
       id="home"
-      className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8 
-             bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden pt-32"
+  className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8 
+             bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden pt-20 sm:pt-24"
     >
       {/* Background Animated Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 pt-4 flex-wrap">
         <motion.div
           animate={{
             x: [0, 100, 0],

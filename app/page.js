@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 function page() {
   return (
     <div>
-      <Navbar/>
+     <Navbar/>
      <Header/>
      <AboutMe/>
      <Skills/>
